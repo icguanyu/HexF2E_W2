@@ -1,0 +1,357 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+$bg: #F2F2F2;
+$mainpurple: #567377;
+$textgray: #9B9B9B;
+
+body,html{
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+body{
+  background: $bg 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+}
+.topheader{
+  width: 100%;
+  height: 92px;
+  background: $mainpurple 100%;
+  .top_group{
+    max-width: 1200px;
+    height: 92px;
+    padding: 0px 30px;
+    margin: 0 auto;
+    align-items: center;
+    #logo{
+      display: inline-block;
+      font-weight: 900;
+      line-height: 92px;
+      width: 300px;
+      flex: 1;
+      font-size: 26px;
+      color: #fff;
+    }
+    #search{
+      display: inline-block;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(white,.5);
+      flex: 2;
+      i{
+        color: #fff;
+        font-size: 20px;
+        margin-right: 5px;
+      }
+      input{
+        border: none;
+        outline: none;
+        background: none;
+        width: 232px;
+        height: 24px;
+        font-style: italic;
+        color: #fff;
+      }
+      ::placeholder{
+        font-size: 20px;
+        color: rgba(white,.5);
+      }
+    }
+  }
+}
+
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+.filter{
+  flex: 1;
+  background: #EBEBEB 100%;
+  .tab{
+    display: none;
+    cursor: pointer;
+    top: 21px;
+    right: 21px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    &:after,&:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 3px;
+      height: 100%;
+      background: #999;
+    }
+    &:before{
+      transform: translate(-50%,-50%) rotate(90deg);
+    }
+  }
+  .tab_off{
+    &:after{
+      display: none;
+    }
+  }
+  .condition{
+    position: relative;
+    width: 300px;
+    border-bottom: 1px solid #D7D7D7;
+    padding: 20px;
+    box-sizing: border-box;
+    &:last-child{
+      border-bottom: none
+    }
+    .hide_tab{
+      label{
+        height: 40px;
+        margin: 5px 10px;
+      }
+      input[type="date"]{
+        border: none;
+        width: 169px;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 0px 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+.result{
+  flex: 3;
+  padding: 20px 40px;
+  font-size: 24px;
+  box-sizing: border-box;
+  #rnumber{
+    font-weight: 600;
+    margin: 0px 5px;
+    color: $mainpurple;
+  }
+  .showtag{
+    margin-bottom: 20px;
+    .tags{
+      font-size: 16px;
+      color:$mainpurple; 
+      i{
+        margin-left: 8px;
+      }
+      span{
+        letter-spacing: 3px;
+        cursor: pointer;
+        padding: 5px 10px;
+        border: 1px solid $mainpurple; 
+        margin: 0px 5px;
+        border-radius: 20px;
+        transition: .2s;
+        &:hover{
+          background: $mainpurple;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.article{
+  background: #fff;
+  width: 780px;
+  height: 220px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  transition: .2s;
+  &:hover{
+    box-shadow: 3px 3px 10px #ccc;
+  }
+  .pic{
+    text-align: center;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    img{
+      height: 100%;
+      transition: .3s;
+      &:hover{
+        transform: scale(1.1,1.1);
+      }
+    }
+  }
+  .contain{
+    width: 560px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    .title{
+      font-size: 24px;
+      color: $mainpurple;
+    }
+    .intro{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .cate{
+      font-size: 16px;
+      span{
+        background: #D7D7D7;
+        color: #fff;
+        margin: 0px 10px;
+        padding: 3px 20px;
+        border-radius: 20px;;
+      }
+    }
+    .info{
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 19px;
+      i{
+        margin-left: 5px;
+      }
+      span{
+        margin: 0px 10px;
+        color: $textgray;
+      }
+    }
+  }
+}
+.pages{
+  display: flex;
+  justify-content: flex-end;
+  span{
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 7px 15px; 
+    background: #fff;
+    border-right: 1px solid #ECEEEF
+  }
+  .on{
+    background: $mainpurple;
+    color: #fff
+  }
+}
+
+
+@media screen and (max-width: 796px) {
+  .topheader{
+    width: 100%;
+    .top_group{
+      display: flex;
+      width: 100%;
+      padding: 0px 30px;
+    }
+  }
+  .result{
+    padding: 10px 20px;
+  }
+  .article{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    .pic{
+      width: 100%;
+      min-height: 196px;
+      overflow: hidden;
+      img{
+        width: 388px;
+        height: 196px;
+        height: auto;
+      }
+    }
+    .contain{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topheader{
+    z-index: 1;
+    width: 100%;
+    height: 124px;
+    .top_group{
+      display: block;
+      width: 100%;
+      padding: 0;
+      #logo{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        line-height: 69px;
+      }
+      #search{
+        border-bottom: none;
+        line-height: 36px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 55px;
+        background: #EBEBEB;
+        color: #9B9B9B;
+        box-shadow: 0px 2px 10px #ccc;
+        i{
+          color: #9B9B9B;
+        }
+        input{
+          color: #9B9B9B;
+          font-size: 20px;
+        }
+        ::placeholder{
+          color: #9B9B9B;
+        }
+      }
+    }
+  } 
+  .wrap{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .filter{
+    .condition{
+      cursor: pointer;
+      width: 100%;
+      padding: 15px 20px;
+      background: #D7D7D7;
+      border-bottom: 1px solid #9B9B9B;
+      p{
+        margin-bottom: 0px;
+      }
+      .tab{
+        display: block;
+      }
+      .hide_tab{
+        display: none;
+        margin-top: 20px;
+      }
+      .date_tab input{
+        width: auto;
+        height: auto;
+      }
+    }
+    .condition_on{
+      background: #EBEBEB 100%;
+    }
+  }
+  .result{
+    .showtag{
+      display: none;
+    }
+  }
+  .pages{
+    justify-content: center;
+  }
+}

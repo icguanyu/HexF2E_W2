@@ -1,0 +1,126 @@
+.topheader
+  .top_group
+    #logo
+      span 侏儸紀世界
+    #search
+      i.fas.fa-search
+      input(type="text" placeholder="輸入你想搜尋的恐龍")
+.wrap
+  .filter
+    .condition
+      .tab
+      .location
+        .locat
+          p 依地點查詢
+        .hide_tab
+          select.custom-select(name="location") 地點
+            option.selected(disabled selected) 請選擇地點
+            option(value="Taiwan") 台灣
+            option(value="Taiwan") 台灣
+    .condition
+      .tab
+      .date
+        p 依生日查詢
+        .hide_tab
+          label 從
+          input(type="date")
+          br
+          label 到
+          input(type="date")
+    .condition
+      .tab
+      .categories
+        .cate
+          p 依類別查詢
+        .hide_tab
+          .cate
+            input(type="checkbox")
+            label 肉食性
+          .cate
+            input(type="checkbox")
+            label 草食性
+          .cate
+            input(type="checkbox")
+            label 飛行
+          .cate
+            input(type="checkbox")
+            label 海生
+          .cate
+            input(type="checkbox")
+            label 陸上其他 
+  .result
+    .showtag
+      p 顯示<span id="rnumber">15</span>個搜尋結果...
+      .tags
+        span 陸上
+          i.far.fa-times-circle
+        span 肉食
+          i.far.fa-times-circle
+    .wrap
+      .article
+        .pic
+          img(src="https://goo.gl/s1N4mW")
+        .contain
+          .title
+            p 六角學院前端精神時光屋2/9
+          .intro
+            p 這次僅純粹練習切版與RWD，動態資料皆未完成...
+          .cate
+            span html
+            span css
+            span rwd
+            span 排版
+          .info
+            i.fas.fa-map-marker-alt 
+            span 完成日:2018.06.04
+            i.far.fa-clock
+            span 花費時間:4hr
+    .wrap
+      .article
+        .pic
+          img(src="https://goo.gl/s1N4mW")
+        .contain
+          .title
+            p 暴龍
+          .intro
+            p 暴龍（學名：Tyrannosaurus rex；又名：霸王龍、雷克斯暴龍），是暴龍屬（學名：Tyrannosaurus）中目前唯一的有效物種，是一種巨型的肉食性恐龍，身長約13公尺。
+          .cate
+            span 肉食性
+            span 陸上
+          .info
+            i.fas.fa-map-marker-alt 
+            span 棲地
+            i.far.fa-clock
+            span 出沒地
+    .wrap
+      .article
+        .pic
+          img(src="https://goo.gl/s1N4mW")
+        .contain
+          .title
+            p 暴龍
+          .intro
+            p 暴龍（學名：Tyrannosaurus rex；又名：霸王龍、雷克斯暴龍），是暴龍屬（學名：Tyrannosaurus）中目前唯一的有效物種，是一種巨型的肉食性恐龍，身長約13公尺。
+          .cate
+            span 肉食性
+            span 陸上
+          .info
+            i.fas.fa-map-marker-alt 
+            span 棲地
+            i.far.fa-clock
+            span 出沒地
+    .pages
+      #prev
+        span <
+      .page
+        span.on 1
+        span 2
+        span 3
+        span 4
+        span 5
+      #next
+        span >
+    
+        
+      
+    
