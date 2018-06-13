@@ -1,153 +1,156 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>六角學院前端精神時光屋2/9</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta charset="UTF-8">
 
 
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>六角學院前端精神時光屋2/9</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-      <link rel="stylesheet" href="css/style.css">
 
-  
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
 
-  
-<div class="topheader">
-  <div class="top_group">
-    <div id="logo"><span>侏儸紀世界</span></div>
-    <div id="search"><i class="fas fa-search"></i>
-      <input type="text" placeholder="輸入你想搜尋的恐龍"/>
-    </div>
-  </div>
-</div>
-<div class="wrap">
-  <div class="filter">
-    <div class="condition">
-      <div class="tab"></div>
-      <div class="location">
-        <div class="locat">
-          <p>依地點查詢</p>
+
+    <div class="topheader">
+        <div class="top_group">
+            <div id="logo"><span>侏儸紀世界</span></div>
+            <div id="search"><i class="fas fa-search"></i>
+                <input type="text" placeholder="輸入你想搜尋的恐龍" />
+            </div>
         </div>
-        <div class="hide_tab">
-          <select class="custom-select" name="location">地點
+    </div>
+    <div class="wrap">
+        <div class="filter">
+            <div class="condition">
+                <div class="tab"></div>
+                <div class="location">
+                    <div class="locat">
+                        <p>依地點查詢</p>
+                    </div>
+                    <div class="hide_tab">
+                        <select class="custom-select" name="location">地點
             <option class="selected" disabled="disabled" selected="selected">請選擇地點</option>
             <option value="Taiwan">台灣</option>
             <option value="Taiwan">台灣</option>
           </select>
+                    </div>
+                </div>
+            </div>
+            <div class="condition">
+                <div class="tab"></div>
+                <div class="date">
+                    <p>依生日查詢</p>
+                    <div class="hide_tab">
+                        <label>從</label>
+                        <input type="date" /><br/>
+                        <label>到</label>
+                        <input type="date" />
+                    </div>
+                </div>
+            </div>
+            <div class="condition">
+                <div class="tab"></div>
+                <div class="categories">
+                    <div class="cate">
+                        <p>依類別查詢</p>
+                    </div>
+                    <div class="hide_tab">
+                        <div class="cate">
+                            <input type="checkbox" />
+                            <label>肉食性</label>
+                        </div>
+                        <div class="cate">
+                            <input type="checkbox" />
+                            <label>草食性</label>
+                        </div>
+                        <div class="cate">
+                            <input type="checkbox" />
+                            <label>飛行</label>
+                        </div>
+                        <div class="cate">
+                            <input type="checkbox" />
+                            <label>海生</label>
+                        </div>
+                        <div class="cate">
+                            <input type="checkbox" />
+                            <label>陸上其他 </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="condition">
-      <div class="tab"></div>
-      <div class="date">
-        <p>依生日查詢</p>
-        <div class="hide_tab">
-          <label>從</label>
-          <input type="date"/><br/>
-          <label>到</label>
-          <input type="date"/>
+        <div class="result">
+            <div class="showtag">
+                <p>顯示<span id="rnumber">15</span>個搜尋結果...</p>
+                <div class="tags"><span>陸上<i class="far fa-times-circle"></i></span><span>肉食<i class="far fa-times-circle"></i></span></div>
+            </div>
+            <div class="wrap">
+                <div class="article">
+                    <div class="pic"><img src="https://goo.gl/s1N4mW" /></div>
+                    <div class="contain">
+                        <div class="title">
+                            <p>六角學院前端精神時光屋2/9</p>
+                        </div>
+                        <div class="intro">
+                            <p>這次僅純粹練習切版與RWD，動態資料皆未完成...</p>
+                        </div>
+                        <div class="cate"><span>html</span><span>css</span><span>rwd</span><span>排版</span></div>
+                        <div class="info"><i class="fas fa-map-marker-alt"> </i><span>完成日:2018.06.04</span><i class="far fa-clock"></i><span>花費時間:4hr</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="article">
+                    <div class="pic"><img src="https://goo.gl/s1N4mW" /></div>
+                    <div class="contain">
+                        <div class="title">
+                            <p>暴龍</p>
+                        </div>
+                        <div class="intro">
+                            <p>暴龍（學名：Tyrannosaurus rex；又名：霸王龍、雷克斯暴龍），是暴龍屬（學名：Tyrannosaurus）中目前唯一的有效物種，是一種巨型的肉食性恐龍，身長約13公尺。</p>
+                        </div>
+                        <div class="cate"><span>肉食性</span><span>陸上</span></div>
+                        <div class="info"><i class="fas fa-map-marker-alt"> </i><span>棲地</span><i class="far fa-clock"></i><span>出沒地</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="article">
+                    <div class="pic"><img src="https://goo.gl/s1N4mW" /></div>
+                    <div class="contain">
+                        <div class="title">
+                            <p>暴龍</p>
+                        </div>
+                        <div class="intro">
+                            <p>暴龍（學名：Tyrannosaurus rex；又名：霸王龍、雷克斯暴龍），是暴龍屬（學名：Tyrannosaurus）中目前唯一的有效物種，是一種巨型的肉食性恐龍，身長約13公尺。</p>
+                        </div>
+                        <div class="cate"><span>肉食性</span><span>陸上</span></div>
+                        <div class="info"><i class="fas fa-map-marker-alt"> </i><span>棲地</span><i class="far fa-clock"></i><span>出沒地</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <div id="prev"><span><</span></div>
+                <div class="page"><span class="on">1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+                <div id="next"><span>></span></div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="condition">
-      <div class="tab"></div>
-      <div class="categories">
-        <div class="cate">
-          <p>依類別查詢</p>
-        </div>
-        <div class="hide_tab">
-          <div class="cate">
-            <input type="checkbox"/>
-            <label>肉食性</label>
-          </div>
-          <div class="cate">
-            <input type="checkbox"/>
-            <label>草食性</label>
-          </div>
-          <div class="cate">
-            <input type="checkbox"/>
-            <label>飛行</label>
-          </div>
-          <div class="cate">
-            <input type="checkbox"/>
-            <label>海生</label>
-          </div>
-          <div class="cate">
-            <input type="checkbox"/>
-            <label>陸上其他 </label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="result">
-    <div class="showtag">
-      <p>顯示<span id="rnumber">15</span>個搜尋結果...</p>
-      <div class="tags"><span>陸上<i class="far fa-times-circle"></i></span><span>肉食<i class="far fa-times-circle"></i></span></div>
-    </div>
-    <div class="wrap">
-      <div class="article">
-        <div class="pic"><img src="https://goo.gl/s1N4mW"/></div>
-        <div class="contain">
-          <div class="title">
-            <p>六角學院前端精神時光屋2/9</p>
-          </div>
-          <div class="intro">
-            <p>這次僅純粹練習切版與RWD，動態資料皆未完成...</p>
-          </div>
-          <div class="cate"><span>html</span><span>css</span><span>rwd</span><span>排版</span></div>
-          <div class="info"><i class="fas fa-map-marker-alt"> </i><span>完成日:2018.06.04</span><i class="far fa-clock"></i><span>花費時間:4hr</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="article">
-        <div class="pic"><img src="https://goo.gl/s1N4mW"/></div>
-        <div class="contain">
-          <div class="title">
-            <p>暴龍</p>
-          </div>
-          <div class="intro">
-            <p>暴龍（學名：Tyrannosaurus rex；又名：霸王龍、雷克斯暴龍），是暴龍屬（學名：Tyrannosaurus）中目前唯一的有效物種，是一種巨型的肉食性恐龍，身長約13公尺。</p>
-          </div>
-          <div class="cate"><span>肉食性</span><span>陸上</span></div>
-          <div class="info"><i class="fas fa-map-marker-alt"> </i><span>棲地</span><i class="far fa-clock"></i><span>出沒地</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="article">
-        <div class="pic"><img src="https://goo.gl/s1N4mW"/></div>
-        <div class="contain">
-          <div class="title">
-            <p>暴龍</p>
-          </div>
-          <div class="intro">
-            <p>暴龍（學名：Tyrannosaurus rex；又名：霸王龍、雷克斯暴龍），是暴龍屬（學名：Tyrannosaurus）中目前唯一的有效物種，是一種巨型的肉食性恐龍，身長約13公尺。</p>
-          </div>
-          <div class="cate"><span>肉食性</span><span>陸上</span></div>
-          <div class="info"><i class="fas fa-map-marker-alt"> </i><span>棲地</span><i class="far fa-clock"></i><span>出沒地</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="pages">
-      <div id="prev"><span><</span></div>
-      <div class="page"><span class="on">1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
-      <div id="next"><span>></span></div>
-    </div>
-  </div>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
-  
 
-    <script  src="js/index.js"></script>
+
+    <script src="js/index.js"></script>
 
 
 
